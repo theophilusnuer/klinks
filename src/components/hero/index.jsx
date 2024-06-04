@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import hero1 from "../asset/image/hero1.jpg";
-import hero2 from "../asset/image/hero2.jpg"
+import hero2 from "../asset/image/hero2.jpg";
+import hero3 from "../asset/image/hero3.jpg";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,13 +9,19 @@ const HeroSlider = () => {
     {
       url: hero1,
       text: 'Travel and Work at Ease!',
-      sub: "Get connected to well paying job offers across the globe. ",
+      sub: "Get connected to decent and well paying job offers across the globe. ",
+    },
+    {
+      url: hero3,
+      text: 'Travel and Work at Ease!',
+      sub: "Get connected to decent and well paying job offers across the globe. ",
     },
     {
       url: hero2,
       text: 'Travel and Work at Ease!',
-      sub: "Get connected to well paying job offers across the globe. ",
+      sub: "Get connected to decent and well paying job offers across the globe. ",
     },
+   
   ];
 
   useEffect(() => {
@@ -36,7 +43,7 @@ const HeroSlider = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="absolute w-full text-center">
             <h1 className="text-4xl font-bold md:text-7xl">{slide.text}</h1>
-            <h2 className="text-xl mt-2">{slide.sub}</h2>
+            <h2 className="text-2xl mt-2">{slide.sub}</h2>
           </div>
         </div>
       ))}

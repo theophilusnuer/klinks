@@ -31,7 +31,7 @@ const WhatWeDo = () => {
   return (
     <section id='services' className="py-6">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold text-center mb-8">What We Do</h2>
+        <h2 className="text-5xl text-red-600 font-bold text-center mb-8 font">What We Do!</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">

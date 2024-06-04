@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Quicksand:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
 
 .slide-track {
   display: flex;
-  width: calc(200% + 2rem); /* Width set to twice the viewport width plus margins */
+  width: calc(120% + 1rem); /* Width set to twice the viewport width plus margins */
   animation: slide 20s linear infinite;
 }
 
@@ -21,35 +24,40 @@
   flex-shrink: 0;
   width: 10%; /* Default width */
   box-sizing: border-box;
- 
+  margin-right: 0.5rem; /* Adjust this value for smaller spaces */
 }
 
 @media (max-width: 1024px) {
   .slide {
     width: 20%; /* Adjust for smaller screens (six logos per row) */
+    margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
 }
 
 @media (max-width: 768px) {
   .slide {
     width: 25%; /* Adjust for smaller screens (five logos per row) */
+    margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
 }
 
 @media (max-width: 640px) {
   .slide {
     width: 30%; /* Adjust for smaller screens (four logos per row) */
+    margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
 }
 
 @media (max-width: 480px) {
   .slide {
     width: 33.33%; /* Adjust for smallest screens (three logos per row) */
+    margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
 }
 
 @media (max-width: 320px) {
   .slide {
     width: 50%; /* Adjust for the smallest screens (two logos per row) */
+    margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
 }
