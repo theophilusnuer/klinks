@@ -21,7 +21,6 @@ const HeroSlider = () => {
       text: 'Travel and Work at Ease!',
       sub: "Get connected to decent and well paying job offers across the globe. ",
     },
-   
   ];
 
   useEffect(() => {
@@ -48,6 +47,14 @@ const HeroSlider = () => {
         </div>
       ))}
       <div className="absolute bottom-0 p-8 px-4 md:px-32 left-0 w-full flex flex-col items-center">
+        <a
+          href="https://bit.ly/4aQrK1D" // Replace 'yourphonenumber' with the actual WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-red-600 text-white py-2 px-4 rounded-full text-lg mb-4 transition-transform transform hover:rotate-y-180 flip-button"
+        >
+          
+        </a>
         <div className="flex justify-center mt-8">
           {images.map((_, index) => (
             <button

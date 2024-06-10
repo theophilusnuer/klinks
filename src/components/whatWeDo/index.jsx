@@ -17,7 +17,7 @@ const services = [
   },
   {
     title: 'Flight Ticketing',
-    description: 'We offer competitive prices for flight tickets to destinations worldwide.',
+    description: 'We offer competitive prices for flight tickets to destinations across the globe. ',
     imageUrl: flight,
   },
   {
@@ -29,16 +29,26 @@ const services = [
 
 const WhatWeDo = () => {
   return (
-    <section id='services' className="py-6">
+    <section id="services" className="py-6">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl text-red-600 font-bold text-center mb-8 font">What We Do!</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ">
+        <h2 className="text-5xl text-red-600 font-bold text-center mb-8">What We Do!</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105">
-              <img src={service.imageUrl} alt={service.title} className="w-full h-48 object-cover"/>
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+            >
+              <img src={service.imageUrl} alt={service.title} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <p className="text-gray-600 mb-4">{service.description}</p>
+                <a
+                  href="https://bit.ly/4aQrK1D" // Replace 'yourphonenumber' with the actual WhatsApp number
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-red-600 text-white py-1 px-2 rounded-full text-lg transition-transform transform hover:rotate-y-180 flip-button text-center"
+                >
+                </a>
               </div>
             </div>
           ))}

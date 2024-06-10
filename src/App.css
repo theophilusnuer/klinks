@@ -16,15 +16,15 @@
 
 .slide-track {
   display: flex;
-  width: calc(120% + 1rem); /* Width set to twice the viewport width plus margins */
+  width: calc(100% ); /* Width set to twice the viewport width plus margins */
   animation: slide 20s linear infinite;
 }
 
 .slide {
   flex-shrink: 0;
-  width: 10%; /* Default width */
+  width: 12%; /* Default width */
   box-sizing: border-box;
-  margin-right: 0.5rem; /* Adjust this value for smaller spaces */
+  margin-right: 0.1rem; /* Adjust this value for smaller spaces */
 }
 
 @media (max-width: 1024px) {
@@ -60,4 +60,19 @@
     width: 50%; /* Adjust for the smallest screens (two logos per row) */
     margin-right: 0.25rem; /* Adjust this value for smaller spaces */
   }
+}
+
+.flip-button {
+  perspective: 1000px;
+}
+
+.flip-button::before {
+  content: "Talk to Us";
+  display: block;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-button:hover::before {
+  transform: rotateY(360deg);
 }
