@@ -13,7 +13,7 @@ const Footer = () => {
 
           <div className="flex flex-col items-center">
             <h3 className="text-lg font-bold mb-2">Location</h3>
-            <p className="text-center">Airport SNNIT Building</p>
+            <p className="text-center">Airport SSNIT Building</p>
             <p className="text-center">Accra-Ghana</p>
           </div>
 
