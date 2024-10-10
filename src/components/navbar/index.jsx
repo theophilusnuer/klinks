@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-white shadow-md p-2 z-50">
+    <nav className="fixed w-full bg-white bg-opacity-50 shadow-md p-2 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className='flex'>
           <img className='w-12 h-12' src={siteIcon} alt="" />
